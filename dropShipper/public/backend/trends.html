@@ -1,0 +1,948 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dropship | Trends</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/logo1.ico" />
+
+    <!--global styles-->
+    <link rel="stylesheet" href="css/pages/general_components.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Serif&display=swap"
+        rel="stylesheet">
+
+    <!-- end of global styles-->
+
+
+
+</head>
+
+<body class="fixed_header">
+    <div class="preloader" style=" position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  backface-visibility: hidden;
+  background: #ffffff;">
+        <div class="preloader_img" style="width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 48%;
+  top: 48%;
+  background-position: center;
+z-index: 999999">
+            <img src="img/loader.gif" style=" width: 40px;" alt="loading...">
+        </div>
+    </div>
+    <div id="wrap">
+
+        <!-- .navbar -->
+        <div id="top" class="fixed">
+            <!-- .navbar -->
+            <nav class="navbar navbar-static-top">
+                <div class="container-fluid m-0">
+                    <a class="navbar-brand mr-0" href="index.html">
+                        <h4 class="text-white"><img src="img/logow.png" class="admin_img" alt="logo">
+                            <div class="d-none d-md-block float-right ml-1"> dropship </div>
+                        </h4>
+                    </a>
+                    <div class="menu mr-sm-auto ml-auto d-block d-md-none">
+                        <span class="toggle-left" id="menu-toggle">
+                            <i class="fa fa-bars text-white"></i>
+                        </span>
+                    </div>
+
+
+                    <div class="navbar-toggleable-sm m-lg-auto d-none d-md-block d-lg-flex top_menu" id="nav-content">
+                        <ul class="nav navbar-nav flex-row top_menubar">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="index.html">
+                                    <i class="fas fa-home"></i> <span class="quick_text">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="kategori.html">
+                                    <i class="fa fa fa-edit"></i> <span class="quick_text">Kategori</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="toko.html">
+                                    <i class="fas fa-industry"></i> <span class="quick_text">Dropshipper</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="trends.html">
+                                    <i class="	fas fa-chart-line"></i> <span class="quick_text">Trends</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-sm-3 d-none d-md-block">
+                        <div class="input-group ">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="topnav dropdown-menu-right ml-auto">
+                        <button
+                            class="btn btn-raised bg-default text-white adv_cust_mod_btn d-block d-md-none ml-auto float-left"
+                            data-toggle="modal" data-target="#normal"><i class="fa fa-search"></i>
+                        </button>
+                        <div class="btn-group ">
+                            <div class="notifications no-bg">
+                                <a class="btn btn-default btn-sm messages d-none d-md-block" data-toggle="dropdown"> <i
+                                        class="fa fa-envelope fa-1x text-white"></i>
+                                    <span class="badge badge-warning">1</span>
+                                </a>
+                                <div class="dropdown-menu drop_box_align" role="menu" id="messages_dropdown">
+                                    <div class="popover-header">You have 1 Messages</div>
+                                    <div id="messages">
+
+
+                                        <div class="data">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <img src="img/mailbox_imgs/6.jpg"
+                                                        class="message-img avatar rounded-circle" alt="avatar1">
+                                                </div>
+                                                <div class="col-10 message-data">
+                                                    <strong>David</strong> upcoming events list.
+                                                    <br>
+                                                    <small>add to timeline</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popover-footer">
+                                        <a href="mail_inbox.html">Inbox</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <div class="notifications messages no-bg">
+                                <a class="btn btn-default btn-sm d-none d-md-block" data-toggle="dropdown"> <i
+                                        class="fa fa-bell text-white"></i>
+                                    <span class="badge badge-danger">1</span>
+                                </a>
+                                <div class="dropdown-menu drop_box_align" role="menu">
+                                    <div class="popover-header">You have 1 Notifications</div>
+                                    <div id="notifications">
+
+
+                                        <div class="data">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <img src="img/mailbox_imgs/1.jpg"
+                                                        class="message-img avatar rounded-circle" alt="avatar1">
+                                                </div>
+                                                <div class="col-10 message-data">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <strong>Remo</strong> sent you an image
+                                                    <br>
+                                                    <small class="primary_txt">just now.</small>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popover-footer">
+                                        <a href="#">View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-group">
+                            <div class="user-settings no-bg">
+                                <button type="button" class="btn btn-default no-bg micheal_btn" data-toggle="dropdown">
+                                    <img src="img/admin.jpg" class="admin_img2 rounded-circle avatar-img" alt="avatar">
+                                    <strong>Micheal</strong>
+                                    <span class="fa fa-sort-down white_bg"></span>
+                                </button>
+                                <div class="dropdown-menu admire_admin">
+                                    <div class="popover-header">michael</div>
+                                    <a class="dropdown-item" href="profil.html"><i class="fa fa-cogs"></i>
+                                        Pengaturan Akun</a>
+                                    <a class="dropdown-item" href="invoice.html">
+                                        <i class="fas fa-clipboard"></i> Data Order
+                                    </a>
+                                    <a class="dropdown-item" href="toko.html"><i class="fas fa-industry"></i>
+                                        Toko Saya</a>
+                                    <a class="dropdown-item" href="halaman.html"><i class="	fa fa-sign-out"
+                                            style="font-size:20px; "></i>
+                                        Keluar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <!-- /.navbar -->
+            <!-- /.head -->
+        </div>
+        <!-- sidebar menus for small screen -->
+        <div id="left" class="fixed d-block d-md-none" style="min-height: 10%;">
+            <div>
+
+                <!-- #menu -->
+                <ul id="menu">
+
+                    <li class="pl-5">
+                        <a class="nav-link text-white" href="index.html">
+                            <i class="fa fa-envelope  text-white"></i><span class="quick_text pl-1">Pesan</span>
+                        </a>
+                    </li>
+                    <li class="pl-5">
+                        <a class="nav-link text-white" href="index.html">
+                            <i class="fa fa-bell text-white"></i><span class="quick_text pl-1">Pemberitahuan</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="mt-1" style="border-bottom: 1px solid  	 #BEBEBE;"></div>
+                <ul id="menu" class="mt-2">
+                    <li class="pl-5">
+                        <a class="nav-link text-white" href="index.html">
+                            <i class="fas fa-home"></i> <span class="quick_text">Home</span>
+                        </a>
+                    </li>
+                    <li class="pl-5">
+                        <a class="nav-link text-white" href="kategori.html">
+                            <i class="fa fa fa-edit"></i> <span class="quick_text">Kategori</span>
+                        </a>
+                    </li>
+                    <li class="pl-5">
+                        <a class="nav-link text-white" href="toko.html">
+                            <i class="fas fa-industry"></i> <span class="quick_text">Dropshipper</span>
+                        </a>
+                    </li>
+                    <li class="pl-5">
+                        <a class="nav-link text-white" href="trends.html">
+                            <i class="	fas fa-chart-line"></i> <span class="quick_text">Trends</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="mt-1" style="border-bottom: 1px solid #BEBEBE;"></div>
+            </div>
+            <!-- /#menu -->
+        </div>
+        <!-- end sidebar -->
+        <div class="wrapper">
+
+            <!-- /#left -->
+            <div class="bg-container ">
+                <header class="head">
+                    <div class="main-bar">
+                        <div class="row">
+                            <div class="col-12 col-sm-5">
+                                <h4 class="nav_top_align">
+                                    <i class="fa fa-user"></i>
+                                    Trends
+                                </h4>
+                            </div>
+                            <div class="col-12 col-sm-7">
+                                <ol class="breadcrumb float-right nav_breadcrumb_top_align">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">
+                                            <i class="fa fa-home" data-pack="default" data-tags=""></i>
+                                            Dashboard
+                                        </a>
+                                    </li>
+                                    <li class="active breadcrumb-item">Trends</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- isi -->
+                <div class="outer">
+                    <div class="inner bg-container">
+                        <div class="container">
+                            <h3 class="text-judul">Produk Yang Sedang Trendi</h3>
+                            <h5 class="text-jud-kecil">Ayo beli sekarang untuk tampilan lebih trendi</h5>
+                        </div>
+                        <div class="container mt-4">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container mt-5 ">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container mt-5 ">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-2 padding-product">
+                                    <div class="recom">
+                                        <a href="cart.html"><img src="img/aset/mask.jpg" alt="" width="100%">
+                                            <div class="px-3 pt-2">
+                                                <h6>Baju Syar'i Muslimah
+                                                    wanita baju Gamis...</h6>
+                                                <h4>Rp123.000</h4>
+                                                <div class="row">
+                                                    <div class="col-1 ml-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                    <div class="col-1 pad-btg">
+                                                        <img src="img/bintang.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h6>Bandung</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container mt-5">
+                            <div class="row justify-content-end">
+                                <div class="col-sm-3 text-right">
+                                    <ul class=" pagination  pagination_padding_general_components ">
+                                        <li class="page-item bg-default active">
+                                            <a class="" href="#">PREVIOUS</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a href="#">1</a>
+                                        </li>
+                                        <li class="page-item ">
+                                            <a href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#">3</a>
+                                        </li>
+                                        <li class="page-item disabled">
+                                            <a href="#">4</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a href="#">NEXT</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div style="min-height: 100px;">
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end isi -->
+
+            </div>
+            <!-- /.outer -->
+
+        </div>
+
+        <!-- modals for searching on small screen -->
+        <div class="modal fade" id="normal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modalLabel">Ayo Cari Produk anda</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-footer">
+                        <div class="input-group ">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modals -->
+    </div>
+
+
+    <div style="min-height: 100px;">
+
+    </div>
+    <footer class="bg-default disabled">
+        <div class="container footer-text">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-3">
+                            <h4 class="px-3"><i class='fab fa-facebook-square'></i> Instagram</h4>
+                        </div>
+                        <div class="col-3">
+                            <h4 class="px-3"><i class='fab fa-instagram'></i> @dropship</h4>
+                        </div>
+                        <div class="col-3">
+                            <h4 class="px-3"><i class='	fab fa-twitter-square'></i> @dropship</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 footer-text text-right ">
+                    <h3 class="text-white">Values</h3>
+                    <h5 class="text-white">100% Garansi</h5>
+                    <h5 class="text-white">Terpercaya</h5>
+                    <h5 class="text-white">Aman dalam Transaksi</h5>
+
+                </div>
+
+            </div>
+            <div class="bottom-footer text-bottom">
+                <div style="border-bottom: 1px solid white; width: 100%;">
+                    <h6 class="text-white">Visit an Bandung Techno Park, Jl. Telekomunikasi No. 1 Ters. Buah Batu
+                        Bandung 40257 P:
+                        022-5204086</h6>
+                </div>
+                <div class="py-3">
+                    <h6 class="text-white">drpshipper © 2015-2020 dropshipper Company. All rights reserved. Privacy
+                        Policy | Terms of Use |
+                        Sales and Refunds | Legal | Site Map</h6>
+                </div>
+            </div>
+
+
+        </div>
+
+    </footer>
+    <!-- /#top -->
+
+
+    <!-- # right side -->
+
+    <!-- /#wrap -->
+    <!-- global scripts-->
+    <script src="js/components.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--end of global scripts-->
+    <!--  plugin scripts -->
+
+    <!--end of plugin scripts-->
+
+
+</body>
+
+</html>

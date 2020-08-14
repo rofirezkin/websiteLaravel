@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Toko Saya | Upload</title>
+    <!--IE Compatibility modes-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/logo1.ico" />
+    <!-- Bootstrap -->
+    <!--Global css-->
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <!--end of Global css-->
+    <!--Plugin css-->
+    <link rel="stylesheet" href="vendors/jasny-bootstrap/css/jasny-bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/pages/general_components.css" />
+    <!-- radiocheckbox -->
+    <link rel="stylesheet" href="css/pages/radio_checkbox.css" />
+    <link rel="stylesheet" href="vendors/bootstrap-switch/css/bootstrap-switch.min.css" />
+    <link rel="stylesheet" href="vendors/switchery/css/switchery.min.css" />
+    <link rel="stylesheet" href="vendors/radio_css/css/radiobox.min.css" />
+    <link rel="stylesheet" href="vendors/checkbox_css/css/checkbox.min.css" />
+    <!-- endradiocheckbox -->
+    <!--End off plugin css-->
+    <!--Page level css-->
+    <link rel="stylesheet" href="vendors/fileinput/css/fileinput.min.css" />
+    <link rel="stylesheet" href="vendors/blueimp-gallery-with-desc/css/blueimp-gallery.min.css" />
+    <link rel="stylesheet" href="vendors/blueimp_file_upload/css/jquery.fileupload.css" />
+    <link rel="stylesheet" href="vendors/blueimp_file_upload/css/jquery.fileupload-ui.css" />
+    <link rel="stylesheet" href="vendors/blueimp-gallery-with-desc/css/blueimp-gallery.min.css" />
+    <link rel="stylesheet" href="vendors/dropify/css/dropify.css">
+    <link rel="stylesheet" href="vendors/dropzone/css/dropzone.css">
+    <link rel="stylesheet" href="css/pages/file_upload.css">
+    <link rel="stylesheet" href="#" id="skin_change" />
+    <link rel="stylesheet" href="vendors/ionicons/css/ionicons.min.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--end of page level css-->
+</head>
+
+<body class="fixedMenu_header">
+    <!-- for animation landing page -->
+    <div class="preloader" style=" position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  backface-visibility: hidden;
+  background: #ffffff;">
+        <div class="preloader_img" style="width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 48%;
+  top: 48%;
+  background-position: center;
+z-index: 999999">
+            <img src="img/loader.gif" style=" width: 40px;" alt="loading...">
+        </div>
+    </div>
+    <!-- end animation -->
+    <div id="wrap">
+
+        <!--new top-->
+
+        <div id="top" class="fixed">
+            <!-- .navbar -->
+            <nav class="navbar navbar-static-top">
+                <div class="container-fluid m-0">
+                    <a class="navbar-brand mr-0" href="index.html">
+                        <h4 class="text-white"><img src="img/logow.png" class="admin_img" alt="logo">
+                            <div class="d-none d-md-block float-right ml-1"> dropship </div>
+                        </h4>
+                    </a>
+                    <div class="menu mr-sm-auto ml-auto d-block d-md-none">
+                        <span class="toggle-left" id="menu-toggle">
+                            <i class="fa fa-bars text-white"></i>
+                        </span>
+                    </div>
+
+
+                    <div class="navbar-toggleable-sm m-lg-auto d-none d-md-block d-lg-flex top_menu"
+                        id="nav-content">
+                        <ul class="nav navbar-nav flex-row top_menubar">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="index.html">
+                                    <i class="fas fa-home"></i> <span class="quick_text">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="kategori.html">
+                                    <i class="fa fa fa-edit"></i> <span class="quick_text">Kategori</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="toko.html">
+                                    <i class="fas fa-industry"></i> <span class="quick_text">Dropshipper</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="trends.html">
+                                    <i class="	fas fa-chart-line"></i> <span class="quick_text">Trends</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                   
+                    <div class="col-6 col-sm-3 d-none d-md-block">
+                        <div class="input-group ">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="topnav dropdown-menu-right ml-auto">
+                        <button class="btn btn-raised bg-default text-white adv_cust_mod_btn d-block d-md-none ml-auto float-left"
+                        data-toggle="modal" data-target="#normal"><i class="fa fa-search"></i>
+                    </button>
+                        <div class="btn-group ">
+                            <div class="notifications no-bg">
+                                <a class="btn btn-default btn-sm messages d-none d-md-block" data-toggle="dropdown"> <i
+                                        class="fa fa-envelope fa-1x text-white"></i>
+                                    <span class="badge badge-warning">1</span>
+                                </a>
+                                <div class="dropdown-menu drop_box_align" role="menu" id="messages_dropdown">
+                                    <div class="popover-header">You have 1 Messages</div>
+                                    <div id="messages">
+
+
+                                        <div class="data">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <img src="img/mailbox_imgs/6.jpg"
+                                                        class="message-img avatar rounded-circle" alt="avatar1">
+                                                </div>
+                                                <div class="col-10 message-data">
+                                                    <strong>David</strong> upcoming events list.
+                                                    <br>
+                                                    <small>add to timeline</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popover-footer">
+                                        <a href="mail_inbox.html">Inbox</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <div class="notifications messages no-bg">
+                                <a class="btn btn-default btn-sm d-none d-md-block" data-toggle="dropdown"> <i
+                                        class="fa fa-bell text-white"></i>
+                                    <span class="badge badge-danger">1</span>
+                                </a>
+                                <div class="dropdown-menu drop_box_align" role="menu">
+                                    <div class="popover-header">You have 1 Notifications</div>
+                                    <div id="notifications">
+
+
+                                        <div class="data">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <img src="img/mailbox_imgs/1.jpg"
+                                                        class="message-img avatar rounded-circle" alt="avatar1">
+                                                </div>
+                                                <div class="col-10 message-data">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <strong>Remo</strong> sent you an image
+                                                    <br>
+                                                    <small class="primary_txt">just now.</small>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popover-footer">
+                                        <a href="#">View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-group">
+                            <div class="user-settings no-bg">
+                                <button type="button" class="btn btn-default no-bg micheal_btn"
+                                    data-toggle="dropdown">
+                                    <img src="img/admin.jpg" class="admin_img2 rounded-circle avatar-img"
+                                        alt="avatar">
+                                    <strong>Micheal</strong>
+                                    <span class="fa fa-sort-down white_bg"></span>
+                                </button>
+                                <div class="dropdown-menu admire_admin">
+                                    <div class="popover-header">michael</div>
+                                    <a class="dropdown-item" href="profil.html"><i class="fa fa-cogs"></i>
+                                        Pengaturan Akun</a>
+                                    <a class="dropdown-item" href="invoice.html">
+                                        <i class="fas fa-clipboard"></i> Data Order
+                                    </a>
+                                    <a class="dropdown-item" href="toko.html"><i class="fas fa-industry"></i>
+                                        Toko Saya</a>
+                                    <a class="dropdown-item" href="halaman.html"><i class="	fa fa-sign-out"
+                                            style="font-size:20px; "></i>
+                                        Keluar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <!-- /.navbar -->
+            <!-- /.head -->
+        </div>
+        <!-- modals for searching small screen -->
+        <div class="modal fade" id="normal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modalLabel">Ayo Cari Produk anda</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+    
+                    <div class="modal-footer">
+                        <div class="input-group ">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#top -->
+        <div class="wrapper">
+            <!-- sidebar menus for smallscreen -->
+            <div id="left" class="fixed">
+                <div class="menu_scroll">
+                    <div class="media user-media">
+                        <div class="user-media-toggleHover">
+                            <span class="fa fa-user"></span>
+                        </div>
+                        <div class="col-12 m-t-35">
+                            <div class="user-name1 text-center">
+                                <div>
+                                    <div class="text-center mb-2">
+                                        <img src="img/images3.jpg" width="50%" height="auto"
+                                            class="rounded-circle avatar_wide avatarr1" alt="female" />
+                                    </div>
+
+                                    <h4 class="text-white">Global Jaya Shop</h4>
+                                    <span class="text-white">Michael <small>(Owner)</small></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #menu -->
+                    <div class="mt-1" style="border-bottom: 1px solid  	 #BEBEBE;"></div>
+                    <ul id="menu" class="mt-2">
+                        <li class="pl-5">
+                            <a href="toko.html">
+                                <i class="fa fa-home"></i>
+                                <span class="link-title menu_hide">&nbsp;Dashboard </span>
+                            </a>
+                        </li>
+                        <li class="pl-5">
+                            <a href="profiltoko.html">
+                                <i class="fa  fa-user"></i>
+                                <span class="link-title menu_hide">&nbsp;Profil Toko
+
+                                </span>
+                            </a>
+                        </li>
+                        <li class="pl-5">
+                            <a href="produktoko.html">
+                                <i class="fa fa-cube"></i>
+                                <span class="link-title menu_hide">&nbsp;Produk
+
+                                </span>
+                            </a>
+                        </li>
+                        <li class="pl-5">
+                            <a href="analisis.html">
+                                <i class="fa fa-bar-chart-o"></i>
+                                <span class="link-title menu_hide">&nbsp;Analisis
+
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mt-1" style="border-bottom: 1px solid #BEBEBE;"></div>
+                    <div class="d-block d-md-none">
+             
+                        <ul id="menu" class="mt-2">
+                            <li class="pl-5">
+                                <a class="nav-link text-white" href="index.html">
+                                    <i class="fas fa-home"></i> <span class="quick_text">Home</span>
+                                </a>
+                            </li>
+                            <li class="pl-5">
+                                <a class="nav-link text-white" href="kategori.html">
+                                    <i class="fa fa fa-edit"></i> <span class="quick_text">Kategori</span>
+                                </a>
+                            </li>
+                            <li class="pl-5">
+                                <a class="nav-link text-white" href="toko.html">
+                                    <i class="fas fa-industry"></i> <span class="quick_text">Dropshipper</span>
+                                </a>
+                            </li>
+                            <li class="pl-5">
+                                <a class="nav-link text-white" href="trends.html">
+                                    <i class="	fas fa-chart-line"></i> <span class="quick_text">Trends</span>
+                                </a>
+                            </li>
+                        </ul>
+               
+                    </div>
+                </div>
+                <!-- /#menu -->
+            </div>
+            <!-- /#end sidebar -->
+
+            <div id="content" class="bg-container">
+                <header class="head">
+                    <div class="main-bar">
+                        <div class="row">
+                            <div class="col-12 col-sm-5">
+                                <h4 class="nav_top_align">
+                                    <i class="fa fa-user"></i>
+                                    Profil Toko
+                                </h4>
+                            </div>
+                            <div class="col-12 col-sm-7">
+                                <ol class="breadcrumb float-right nav_breadcrumb_top_align">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">
+                                            <i class="fa fa-home" data-pack="default" data-tags=""></i>
+                                            Dashboard
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="toko.html">Toko Saya</a>
+                                    </li>
+
+                                    <li class="active breadcrumb-item">Profil Toko</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- isi upload -->
+                <div class="outer">
+                    <div class="inner bg-container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card file_input">
+                                    <div class="card-header bg-white">
+                                        Upload Produk Anda
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col m-t-35">
+                                                <h5>Upload Minimal Tiga Foto </h5>
+                                                <input id="input-fa" name="inputfa[]" type="file" multiple
+                                                    class="file-loading">
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row justify-content-center">
+                                                <div class="col-lg-10">
+                                                    <!-- <form class="form-horizontal"> -->
+                                                    <!-- <fieldset> -->
+                                                    <!-- Name input-->
+                                                    <div class="form-group row m-t-25">
+                                                        <div class="col-lg-12">
+                                                            <label for="signup_name"
+                                                                class="col-form-label form-group-horizontal">
+                                                                Nama Produk
+                                                            </label>
+                                                            <div class="input-group input-group-prepend">
+                                                                <span
+                                                                    class="input-group-text border-right-0 rounded-left">
+                                                                    <i class="fa fa-cube"></i>
+                                                                </span>
+                                                                <input type="text" class="form-control" id="signup_name"
+                                                                    placeholder="Nama Produk">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- first name-->
+
+                                                    <!-- harga-->
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-12">
+                                                            <label for="harga"
+                                                                class="col-form-label form-group-horizontal">
+                                                                Harga
+                                                            </label>
+                                                            <div class="input-group input-group-prepend">
+                                                                <span
+                                                                    class="input-group-text border-right-0 rounded-left">
+                                                                    <i class="fas fa-dollar-sign"></i>
+                                                                </span>
+                                                                <input type="text" class="form-control" id="harga"
+                                                                    placeholder="Harga Produk">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-12">
+                                                            <label for="harga"
+                                                                class="col-form-label form-group-horizontal">
+                                                                Harga Untuk Dropshipper
+                                                            </label>
+                                                            <div class="input-group input-group-prepend">
+                                                                <span
+                                                                    class="input-group-text border-right-0 rounded-left">
+                                                                    <i class="fas fa-dollar-sign"></i>
+                                                                </span>
+                                                                <input type="text" class="form-control" id="harga"
+                                                                    placeholder="Harga Untuk Dropshipper">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-12">
+                                                            <label for="harga"
+                                                                class="col-form-label form-group-horizontal">
+                                                                Jumlah Produk
+                                                            </label>
+                                                            <div class="input-group input-group-prepend">
+                                                                <span
+                                                                    class="input-group-text border-right-0 rounded-left">
+                                                                    <i class="fa  fa-cubes"></i>
+                                                                </span>
+                                                                <input type="text" class="form-control" id="harga"
+                                                                    placeholder="Jumlah Produk Anda">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-12">
+                                                            <label for="signup_gender"
+                                                                class="col-form-label form-group-horizontal">
+                                                                Kategori
+                                                            </label>
+                                                            <div class="input-group input-group-prepend">
+                                                                <span
+                                                                    class="input-group-text border-right-0 rounded-left">
+                                                                    <i class="fa fa-users"></i>
+                                                                </span>
+                                                                <select class="form-control" id="signup_gender">
+                                                                    <option value="male">Pria</option>
+                                                                    <option value="female">Wanita</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 px-0 input_field_sections">
+                                                        <h5>Deskripsi Barang</h5>
+                                                        <textarea id="text4" class="form-control" cols="50" rows="5"></textarea>
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col-lg-11">
+                                                            <a href="toko.html"> <button
+                                                                    class="btn btn-warning layout_btn_prevent">Cancel</button></a>
+                                                            <a href="produktoko.html"> <button
+                                                                    class="btn btn-primary ">Upload
+                                                                    Produk</button></a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- </fieldset> -->
+                                                    <!-- </form> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="min-height: 100px;">
+                </div>
+                <!-- footer -->
+                <footer class="bg-default disabled py-5 " style="margin-bottom:-15px">
+                    <div class="container footer-text">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-8">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h4 class="px-3 text-white"><i class='fab fa-facebook-square'></i> Dropship</h4>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <h4 class="px-3 text-white"><i class='fab fa-instagram'></i> @dropship</h4>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <h4 class="px-3 text-white"><i class='	fab fa-twitter-square'></i> @dropship
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 footer-text text-right ">
+                                <h3 class="text-white">Values</h3>
+                                <h5 class="text-white">100% Garansi</h5>
+                                <h5 class="text-white">Terpercaya</h5>
+                                <h5 class="text-white">Aman dalam Transaksi</h5>
+
+                            </div>
+
+                        </div>
+                        <div class="bottom-footer text-bottom col-12">
+                            <div style="border-bottom: 1px solid white; width: 100%;">
+                                <h6 class="text-white">Visit an Bandung Techno Park, Jl. Telekomunikasi No. 1 Ters. Buah
+                                    Batu
+                                    Bandung 40257 P:
+                                    022-5204086</h6>
+                            </div>
+                            <div class="py-3">
+                                <h6 class="text-white">drpshipper © 2015-2020 dropshipper Company. All rights reserved.
+                                    Privacy
+                                    Policy | Terms of Use |
+                                    Sales and Refunds | Legal | Site Map</h6>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </footer>
+                <!-- /.inner -->
+            </div>
+            <!-- /.outer -->
+        </div>
+        <!--wrapper-->
+    </div>
+
+    <!-- # right side -->
+    <!--Global scripts-->
+    <script src="js/components.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="vendors/fileinput/js/fileinput.min.js"></script>
+    <script src="vendors/fileinput/js/theme.js"></script>
+    <script src="vendors/blueimp_file_upload/js/jquery.ui.widget.js"></script>
+    <script src="vendors/blueimp-tmpl/js/tmpl.js"></script>
+    <script src="vendors/blueimploadimage/js/load-image.all.min.js"></script>
+    <script src="vendors/blueimp-canvas-to-blob/js/canvas-to-blob.js"></script>
+    <script src="vendors/blueimp-gallery-with-desc/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="vendors/blueimp_file_upload/js/jquery.iframe-transport.js"></script>
+    <script src="vendors/blueimp_file_upload/js/jquery.fileupload.js"></script>
+    <script src="vendors/blueimp_file_upload/js/jquery.fileupload-process.js"></script>
+    <script src="vendors/blueimp_file_upload/js/jquery.fileupload-image.js"></script>
+    <script src="vendors/blueimp_file_upload/js/jquery.fileupload-audio.js"></script>
+    <script src="vendors/blueimp_file_upload/js/jquery.fileupload-video.js"></script>
+    <script src="vendors/blueimp_file_upload/js/jquery.fileupload-validate.js"></script>
+    <script src="vendors/blueimp_file_upload/js/jquery.fileupload-ui.js"></script>
+    <script src="vendors/dropify/js/dropify.js"></script>
+    <script src="vendors/dropzone/js/dropzone.js"></script>
+    <!-- end of global scripts-->
+    <script src="js/pages/file_upload.js"></script>
+    <script id="template-upload" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-upload fade">
+            <td>
+                <span class="preview"></span>
+            </td>
+            <td>
+                <p class="name">{%=file.name%}</p>
+                <strong class="error text-danger"></strong>
+            </td>
+            <td>
+                <p class="size">Processing...</p>
+                <div class="progress active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                    <div class="progress-bar bg-success" style="width:0%;"></div>
+                </div>
+            </td>
+            <td>
+                {% if (!i && !o.options.autoUpload) { %}
+                <button class="btn btn-primary start m-t-10" disabled>
+                    <i class="fa fa-arrow-up"></i>
+                    <span>Start</span>
+                </button>
+                {% } %} {% if (!i) { %}
+                <button class="btn btn-warning cancel m-t-10">
+                    <i class="fa fa-close"></i>
+                    <span>Cancel</span>
+                </button>
+                {% } %}
+            </td>
+        </tr>
+        {% } %}
+
+
+
+    </script>
+    <script id="template-download" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-download fade">
+            <td>
+                <span class="preview">
+                {% if (file.thumbnailUrl) { %}
+                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+                {% } %}
+            </span>
+            </td>
+            <td>
+                <p class="name">
+                    {% if (file.url) { %}
+                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl? 'data-gallery': ''%}>{%=file.name%}</a> {% } else { %}
+                    <span>{%=file.name%}</span> {% } %}
+                </p>
+                {% if (file.error) { %}
+                <div><span class="label label-danger">Error</span> {%=file.error%}</div>
+                {% } %}
+            </td>
+            <td>
+                <span class="size">{%=o.formatFileSize(file.size)%}</span>
+            </td>
+            <td>
+                {% if (file.deleteUrl) { %}
+                <button class="btn btn-danger delete m-t-10" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}" {% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}' {% } %}>
+                    <i class="fa fa-trash"></i>
+                    <span>Delete</span>
+                </button>
+                <input type="checkbox" name="delete" value="1" class="toggle"> {% } else { %}
+                <button class="btn btn-warning cancel m-t-10">
+                    <i class="fa fa-close"></i>
+                    <span>Cancel</span>
+                </button>
+                {% } %}
+            </td>
+        </tr>
+        {% } %}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+html {
+    position: relative;
+}
+
+body {
+ 
+    margin-bottom: 300px;
+    background-color: #FBF9F9;
+   
+}
+.putih{
+    color: white;
+}
+.container-fluid-1 {
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-right: auto;
+    margin-left: auto; }
+
+.carousel {
+    height: 500px;
+
+    color: white;
+    padding-top: 100px;
+    background-color: #6C757D
+
+
+}
+
+
+.text-slide {
+    padding-top: 60px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+}
+
+.text-slide-1 {
+    color: #CBC4C4;
+
+}
+
+.jumbotron {
+   
+    background-color: #E6E1E1;
+    min-height: 500px;
+}
+
+.recom {
+    border: 1px solid #6C757D;
+    padding: 0px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+
+.gambar-pos {
+    background-size: cover;
+}
+
+.btn-drop {
+    text-align: left;
+    margin: -330px 0px 0px 170px;
+    font-size: 20px;
+
+}
+
+footer {
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 300px;
+    
+
+}
+
+.footer-text h4 {
+    margin-top: 40px;
+    color: white;
+
+}
+
+.footer-text h3 {
+    margin-top: 40px;
+    color: white;
+
+}
+
+
+.bottom-footer {
+
+    position: relative;
+    padding-left: 20%;
+
+}
+
+.text-bottom {
+
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+
+}
+
+.text-white {
+    color: white;
+}
+
+.text-judul {
+    font-family: 'Merriweather', serif;
+}
+
+.text-jud-kecil {
+    font-family: 'Noto Serif', serif;
+    border-bottom: 2px solid #6C757D;
+}
+.pad-btg{
+    padding: 10px;
+}
+
+@media (min-width: 988px) {
+   
+.gambar-slide{
+    width: 250px;
+   
+}
+
+}
+
+@media (min-width: 1200px) {
+   
+    .gambar-slide{
+        width: 350px;
+       
+    } 
+}
+@media (max-width: 1400px) {
+   
+    .padding-product{
+        padding: 1px;
+       
+    } 
+}
+@media (max-width: 1400px){
+
+    .text-slide{
+        font-size: 30px;
+    }
+    .text-slide-1{
+        font-size: 13px;
+    }
+    .text-judul{
+        font-size: 20px;
+        
+    }
+    .text-jud-kecil{
+        font-size: 13px;
+    }
+}

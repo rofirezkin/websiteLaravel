@@ -1,0 +1,551 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Toko Saya | Analisis</title>
+    <!--IE Compatibility modes-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/logo1.ico" />
+    <link rel="stylesheet" href="vendors/swiper/css/swiper.min.css" />
+    <!-- global styles-->
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/pages/layouts.css" />
+    <link rel="stylesheet" href="#" id="skin_change" />
+    <link rel="stylesheet" href="css/pages/widgets.css">
+    <link rel="stylesheet" href="css/pages/general_components.css" />
+    <link rel="stylesheet" href="vendors/ionicons/css/ionicons.min.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link  rel="stylesheet" href="vendors/swiper/css/swiper.min.css"/>
+    <link  rel="stylesheet" href="vendors/ihover/css/ihover.min.css"/>
+
+    <link rel="stylesheet" href="css/pages/flot_charts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- end of global styles-->
+</head>
+
+<body class="fixedMenu_header fixed_header">
+  <!-- for Animation landing -->
+  <div class="preloader" style=" position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  backface-visibility: hidden;
+  background: #ffffff;">
+        <div class="preloader_img" style="width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 48%;
+  top: 48%;
+  background-position: center;
+z-index: 999999">
+            <img src="img/loader.gif" style=" width: 40px;" alt="loading...">
+        </div>
+    </div>
+    <!-- end animation landing -->
+
+
+    <div id="wrap">
+      
+        <div id="top" class="fixed">
+            <!-- .navbar -->
+            <nav class="navbar navbar-static-top">
+                <div class="container-fluid m-0">
+                    <a class="navbar-brand mr-0" href="index.html">
+                        <h4 class="text-white"><img src="img/logow.png" class="admin_img" alt="logo">
+                            <div class="d-none d-md-block float-right ml-1"> dropship </div>
+                        </h4>
+                    </a>
+                    <div class="menu mr-sm-auto ml-auto d-block d-md-none">
+                        <span class="toggle-left" id="menu-toggle">
+                            <i class="fa fa-bars text-white"></i>
+                        </span>
+                    </div>
+
+
+                    <div class="navbar-toggleable-sm m-lg-auto d-none d-md-block d-lg-flex top_menu"
+                        id="nav-content">
+                        <ul class="nav navbar-nav flex-row top_menubar">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="index.html">
+                                    <i class="fas fa-home"></i> <span class="quick_text">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="kategori.html">
+                                    <i class="fa fa fa-edit"></i> <span class="quick_text">Kategori</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="toko.html">
+                                    <i class="fas fa-industry"></i> <span class="quick_text">Dropshipper</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="trends.html">
+                                    <i class="	fas fa-chart-line"></i> <span class="quick_text">Trends</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                   
+                    <div class="col-6 col-sm-3 d-none d-md-block">
+                        <div class="input-group ">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="topnav dropdown-menu-right ml-auto">
+                        <button class="btn btn-raised bg-default text-white adv_cust_mod_btn d-block d-md-none ml-auto float-left"
+                        data-toggle="modal" data-target="#normal"><i class="fa fa-search"></i>
+                    </button>
+                        <div class="btn-group ">
+                            <div class="notifications no-bg">
+                                <a class="btn btn-default btn-sm messages d-none d-md-block" data-toggle="dropdown"> <i
+                                        class="fa fa-envelope fa-1x text-white"></i>
+                                    <span class="badge badge-warning">1</span>
+                                </a>
+                                <div class="dropdown-menu drop_box_align" role="menu" id="messages_dropdown">
+                                    <div class="popover-header">You have 1 Messages</div>
+                                    <div id="messages">
+
+
+                                        <div class="data">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <img src="img/mailbox_imgs/6.jpg"
+                                                        class="message-img avatar rounded-circle" alt="avatar1">
+                                                </div>
+                                                <div class="col-10 message-data">
+                                                    <strong>David</strong> upcoming events list.
+                                                    <br>
+                                                    <small>add to timeline</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popover-footer">
+                                        <a href="mail_inbox.html">Inbox</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <div class="notifications messages no-bg">
+                                <a class="btn btn-default btn-sm d-none d-md-block" data-toggle="dropdown"> <i
+                                        class="fa fa-bell text-white"></i>
+                                    <span class="badge badge-danger">1</span>
+                                </a>
+                                <div class="dropdown-menu drop_box_align" role="menu">
+                                    <div class="popover-header">You have 1 Notifications</div>
+                                    <div id="notifications">
+
+
+                                        <div class="data">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <img src="img/mailbox_imgs/1.jpg"
+                                                        class="message-img avatar rounded-circle" alt="avatar1">
+                                                </div>
+                                                <div class="col-10 message-data">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    <strong>Remo</strong> sent you an image
+                                                    <br>
+                                                    <small class="primary_txt">just now.</small>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popover-footer">
+                                        <a href="#">View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-group">
+                            <div class="user-settings no-bg">
+                                <button type="button" class="btn btn-default no-bg micheal_btn"
+                                    data-toggle="dropdown">
+                                    <img src="img/admin.jpg" class="admin_img2 rounded-circle avatar-img"
+                                        alt="avatar">
+                                    <strong>Micheal</strong>
+                                    <span class="fa fa-sort-down white_bg"></span>
+                                </button>
+                                <div class="dropdown-menu admire_admin">
+                                    <div class="popover-header">michael</div>
+                                    <a class="dropdown-item" href="profil.html"><i class="fa fa-cogs"></i>
+                                        Pengaturan Akun</a>
+                                    <a class="dropdown-item" href="invoice.html">
+                                        <i class="fas fa-clipboard"></i> Data Order
+                                    </a>
+                                    <a class="dropdown-item" href="toko.html"><i class="fas fa-industry"></i>
+                                        Toko Saya</a>
+                                    <a class="dropdown-item" href="halaman.html"><i class="	fa fa-sign-out"
+                                            style="font-size:20px; "></i>
+                                        Keluar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <!-- /.navbar -->
+            <!-- /.head -->
+        </div>
+
+
+        <!-- /#top -->
+
+        <div class="wrapper">
+            <!-- for sidebar -->
+            <div id="left" class="fixed">
+                <div class="menu_scroll">
+                    <div class="media user-media">
+                        <div class="user-media-toggleHover">
+                            <span class="fa fa-user"></span>
+                        </div>
+                        <div class="col-12 m-t-35">
+                            <div class="user-name1 text-center">
+                                <div>
+                                    <div class="text-center mb-2">
+                                        <img src="img/images3.jpg" width="50%" height="auto" class="rounded-circle avatar_wide avatarr1" alt="female" />
+                                    </div>
+                          
+                                    <h4 class="text-white">Shawn B. Mitchell</h4>
+                                    <span class="text-white">Saint Louis</span>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #menu -->
+                    <div class="mt-1" style="border-bottom: 1px solid  	 #BEBEBE;"></div>
+                    <ul id="menu" class="mt-2">
+                        <li class="pl-5">
+                            <a href="toko.html">
+                                <i class="fa fa-home"></i>
+                                <span class="link-title menu_hide">&nbsp;Dashboard </span>
+                            </a>
+                        </li>
+                        <li class="pl-5">
+                            <a href="profiltoko.html">
+                                <i class="fa  fa-user"></i>
+                                <span class="link-title menu_hide">&nbsp;Profil Toko
+
+                                </span>
+                            </a>
+                        </li>
+                        <li class="pl-5">
+                            <a href="produktoko.html">
+                                <i class="fa fa-cube"></i>
+                                <span class="link-title menu_hide">&nbsp;Produk
+
+                                </span>
+                            </a>
+                        </li>
+                        <li class="pl-5">
+                            <a href="analisis.html">
+                                <i class="fa fa-bar-chart-o"></i>
+                                <span class="link-title menu_hide">&nbsp;Analisis
+
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mt-1" style="border-bottom: 1px solid #BEBEBE;"></div>
+                    <div class="d-block d-md-none">
+             
+                        <ul id="menu" class="mt-2">
+                            <li class="pl-5">
+                                <a class="nav-link text-white" href="index.html">
+                                    <i class="fas fa-home"></i> <span class="quick_text">Home</span>
+                                </a>
+                            </li>
+                            <li class="pl-5">
+                                <a class="nav-link text-white" href="kategori.html">
+                                    <i class="fa fa fa-edit"></i> <span class="quick_text">Kategori</span>
+                                </a>
+                            </li>
+                            <li class="pl-5">
+                                <a class="nav-link text-white" href="toko.html">
+                                    <i class="fas fa-industry"></i> <span class="quick_text">Dropshipper</span>
+                                </a>
+                            </li>
+                            <li class="pl-5">
+                                <a class="nav-link text-white" href="trends.html">
+                                    <i class="	fas fa-chart-line"></i> <span class="quick_text">Trends</span>
+                                </a>
+                            </li>
+                        </ul>
+               
+                    </div>
+                </div>
+                <!-- /#menu -->
+            </div>
+            <!-- end sidebar -->
+            <!-- /#left -->
+
+            <!--  content -->
+            <div id="content" class="bg-container fixed_header_menu_conainer fixed_header_menu_page">
+                <!-- header -->
+                <header class="head">
+                    <div class="main-bar">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <h4 class="nav_top_align"><i class="fa fa-th"></i> Analisis</h4>
+                            </div>
+                            <div class="col-lg-7">
+                                <ul class="breadcrumb float-right nav_breadcrumb_top_align">
+                                    <li class=" breadcrumb-item">
+                                        <a href="index.html">
+                                            <i class="fa fa-home" data-pack="default" data-tags=""></i> Dashboard
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="toko.html">Toko Saya</a>
+                                    </li>
+                                 
+                                 
+                                    <li class="breadcrumb-item active">Analisis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- end header -->
+                
+                <!-- untuk nilai setiap bar -->
+                <div class="outer">
+                    <div class="inner bg-container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header bg-white">
+                                        Hallo!! Micheal <small class="ml-3">Berikut adalah Informasi Toko Anda</small>
+                                    </div>
+                                    <div class="card-body card_block_top_align ">
+                                        <h4>Analisis Data Toko Anda</h4>
+                               
+
+                                        
+                                        <div class="row sales_section mt-5">
+                                            <div class="col-xl col-sm-6 col-12">
+                                                <div class="card p-d-15">
+                                                    <div class="sales_icons">
+                                                        <span class="bg-info"></span>
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="sales_orders text-right m-t-5">Jumlah Penjualan</h5>
+                                                        <h1 class="sales_number m-t-15 text-right" id="orders_countup">
+                                                            1,425</h1>
+                                                        <p class="sales_text">Terjual Minggu Ini: 320
+                                                          
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl col-sm-6 col-12 media_max_573">
+                                                <div class="card p-d-15">
+                                                    <div class="sales_icons">
+                                                        <span class="bg-danger"></span>
+                                                        <i class="fa fa-bar-chart"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="sales_orders text-right m-t-5">Rata Rata Penjualan</h5>
+                                                        <h1 class="sales_number m-t-15 text-right"><span
+                                                                id="revenue_countup">600</span>
+                                                        </h1>
+                                                        <p class="sales_text">Total Produk Terjual: 8,250
+                                                          
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl col-sm-6 col-12 media_max_1199">
+                                                <div class="card p-d-15">
+                                                    <div class="sales_icons">
+                                                        <span class="bg-warning"></span>
+                                                        <i class="fa fa-credit-card"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="sales_orders text-right m-t-5">Rata Rata Omset</h5>
+                                                        <h1 class="sales_number m-t-15 text-right" id="sold_countup">1,025</h1>
+                                                        <p class="sales_text">Omset: 7,600
+                                                      
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl col-sm-6 col-12 media_max_1199">
+                                                <div class="card p-d-15">
+                                                    <div class="sales_icons">
+                                                        <span class="bg-primary"></span>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h5 class="sales_orders text-right m-t-5">Rating Toko</h5>
+                                                        <h1 class="sales_number m-t-15 text-right"
+                                                            id="products_countup"> <i class="fa fa-star" style="color: yellow;"></i>
+                                                            <i class="fa fa-star" style="color: yellow;"></i> <i class="fa fa-star" style="color: yellow;"></i>
+                                                            <i class="fa fa-star" style="color: yellow;"></i><i class="fa fa-star" style="color: yellow;"></i></h1>
+                                                        <p class="sales_text">Jumlah berikan respon: 12,100
+                                                          
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+
+                <!-- highchart produk terjua; -->
+                <div class="outer mt-0">
+                    <div class="col-lg m-t-35">
+                        <div class="card">
+                            <div class="card-header bg-white text-black">
+                                Jumlah Produk Terjual <small class="ml-2 text-secondary">Perminggu</small>
+                            </div>
+                            <div class="card-body m-t-35">
+                                <div id="basicFlotLegend" class="flotLegend"></div>
+                                <div id="line-chart" class="flotChart1"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <!-- highchart omset jualan -->
+                <div class="outer mt-0">
+                    <div class="col-lg m-t-35">
+                        <div class="card">
+                            <div class="card-header bg-white text-black">
+                                Omset Jualan <small class="ml-2 text-secondary">Permingggu </small>
+                            </div>
+                            <div class="card-body m-t-35">
+                                <div id="basicFlotLegend2" class="flotLegend"></div>
+                                <div id="bar-chart" class="flotChart1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /#content -->
+                <div style="min-height: 100px;">
+
+                </div>
+                <!-- for modal searching hide -->
+                <div class="modal fade" id="normal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="modalLabel">Ayo Cari Produk anda</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+            
+                            <div class="modal-footer">
+                                <div class="input-group ">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="bg-default disabled py-5 "style="margin-bottom:-15px">
+                    <div class="container footer-text">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-8">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h4 class="px-3 text-white"><i class='fab fa-facebook-square'></i> Dropship</h4>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <h4 class="px-3 text-white"><i class='fab fa-instagram'></i> @dropship</h4>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <h4 class="px-3 text-white"><i class='	fab fa-twitter-square'></i> @dropship</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 footer-text text-right ">
+                                <h3 class="text-white">Values</h3>
+                                <h5 class="text-white">100% Garansi</h5>
+                                <h5 class="text-white">Terpercaya</h5>
+                                <h5 class="text-white">Aman dalam Transaksi</h5>
+            
+                            </div>
+            
+                        </div>
+                        <div class="bottom-footer text-bottom col-12">
+                            <div style="border-bottom: 1px solid white; width: 100%;">
+                                <h6 class="text-white">Visit an Bandung Techno Park, Jl. Telekomunikasi No. 1 Ters. Buah Batu
+                                    Bandung 40257 P:
+                                    022-5204086</h6>
+                            </div>
+                            <div class="py-3">
+                                <h6 class="text-white">drpshipper © 2015-2020 dropshipper Company. All rights reserved. Privacy
+                                    Policy | Terms of Use |
+                                    Sales and Refunds | Legal | Site Map</h6>
+                            </div>
+                        </div>
+            
+            
+                    </div>
+            
+                </footer>
+            </div>
+         
+           
+            <!--wrapper-->
+        
+            <!-- # right side -->
+
+        </div>
+   
+
+
+        <!-- global scripts-->
+        <script src="js/components.js"></script>
+        <script src="js/custom.js"></script>
+        <!-- end of global scripts-->
+        <script src="js/pages/fixed_menu.js"></script>
+        <script src="vendors/flotchart/js/jquery.flot.js"></script>
+<script src="vendors/flotchart/js/jquery.flot.resize.js"></script>
+<script src="vendors/flotchart/js/jquery.flot.stack.js"></script>
+<script src="vendors/flotchart/js/jquery.flot.time.js"></script>
+<script src="vendors/flotspline/js/jquery.flot.spline.min.js"></script>
+<script src="vendors/flotchart/js/jquery.flot.categories.js"></script>
+<script src="vendors/flotchart/js/jquery.flot.pie.js"></script>
+<script src="vendors/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+<!--plugin scripts-->
+<!--Page level scripts-->
+<script src="js/pages/flot_charts.js"></script>
+
+<script  src="vendors/countUp.js/js/countUp.min.js"></script>
+<script  src="vendors/countUp.js/js/countUp.min.js"></script>
+
+<script  src="js/pages/widget3.js"></script>
+
+</body>
+
+</html>
